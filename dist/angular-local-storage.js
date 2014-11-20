@@ -5,7 +5,7 @@
  * @author grevory <greg@gregpike.ca>
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
-(function ( window, angular, undefined ) {
+module.exports = function (angular, undefined ) {
 /*jshint globalstrict:true*/
 'use strict';
 
@@ -452,4 +452,4 @@ angularLocalStorage.provider('localStorageService', function() {
     };
   }];
 });
-})( window, window.angular );
+}

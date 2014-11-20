@@ -26,8 +26,8 @@ module.exports = function(grunt) {
     concat: {
       options: {
         banner: '<%= meta.banner %>' + '\n' +
-          '(function ( window, angular, undefined ) {' + '\n',
-        footer: '})( window, window.angular );'
+          'module.exports = function (angular, undefined ) {' + '\n',
+        footer: '};'
       },
       dist: {
         src: ['src/common.js', 'src/angular-local-storage.js'],
